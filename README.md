@@ -1,4 +1,7 @@
 angularBackend
 ==============
 
-Backend
+Backend angularJS testailulle.
+
+##Frontend
+https://github.com/Nucleotide/angularJS
