@@ -1,4 +1,8 @@
 Backendtool::Application.routes.draw do
+  resources :sessions
+
+  resources :users
+
   resources :reminders
 
   # The priority is based upon order of creation: first created -> highest priority.
