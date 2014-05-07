@@ -1,6 +1,9 @@
 Backendtool::Application.routes.draw do
   resources :sessions
 
+  post 'session', to: 'sessions#create'
+  delete 'session', to: 'sessions#destroy'
+
   resources :users
 
   resources :reminders
