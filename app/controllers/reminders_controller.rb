@@ -41,10 +41,13 @@ class RemindersController < ApplicationController
   # PATCH/PUT /reminders/1
   # PATCH/PUT /reminders/1.json
   def update
+    @reminder = Reminder.find(params[:id])
+
+
     respond_to do |format|
       if @reminder.update(reminder_params)
         format.html { redirect_to @reminder, notice: 'Reminder was successfully updated.' }
-        format.json { head :no_content }
+        format.json { render action: 'show', status: :created, location: @reminder }
       else
         format.html { render action: 'edit' }
         format.json { render json: @reminder.errors, status: :unprocessable_entity }

@@ -15,7 +15,7 @@ module Backendtool
     config.middleware.use Rack::Cors do
       allow do
         origins '*'
-        resource '*', :headers => :any, :methods => [:get, :post, :delete, :options]
+        resource '*', :headers => :any, :methods => [:get, :post, :delete, :options, :put]
       end
     end
     # Settings in config/environments/* take precedence over those specified here.

@@ -8,6 +8,9 @@ Backendtool::Application.routes.draw do
 
   resources :reminders
 
+  put 'reminders/id', to: 'reminders#update'
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
