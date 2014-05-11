@@ -8,7 +8,7 @@ Backendtool::Application.routes.draw do
 
   resources :reminders
 
-  put 'reminders/id', to: 'reminders#update'
+  put 'reminders/:id', to: 'reminders#update'
 
 
   # The priority is based upon order of creation: first created -> highest priority.
